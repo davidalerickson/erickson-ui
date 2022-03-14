@@ -1,0 +1,43 @@
+<div class="waving">👋</div>
+
+<style>
+	.waving {
+		display: inline-block;
+		width: 3rem;
+		height: 3rem;
+		font-size: 3rem;
+	}
+	.waving:hover {
+		animation-name: wave-animation;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		transform-origin: bottom right;
+	}
+
+	@keyframes wave-animation {
+		0% {
+			transform: rotate(0deg);
+		}
+		10% {
+			transform: rotate(14deg);
+		}
+		20% {
+			transform: rotate(-8deg);
+		}
+		30% {
+			transform: rotate(14deg);
+		}
+		40% {
+			transform: rotate(-4deg);
+		}
+		50% {
+			transform: rotate(10deg);
+		}
+		60% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+</style>
